@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Length Converter</title>
+    <title>Temperature Calculate</title>
     <link rel="stylesheet" href="style.css" type="">
 </head>
 <body>
     <div id="wrapper">
-        <h1 class="heading">CM to INCH</h1>
+        <h1 class="heading">CELSIUS to FAHRENHEIT</h1>
         <hr>
         <div id="inputdiv">
-            <input type="text" id="input" placeholder="Enter CM . . ."><br><br>
+            <input type="text" id="input" placeholder="Enter Celsius . . ."><br><br>
         </div>
         <div id="btn-div">
-            <button type="submit" onclick="convert()" class="btn" >Convert to inch</button>
+            <button type="submit" onclick="convert()" class="btn" >Convert to Fahren</button>
         </div>
         <div id="result">
         <br>
@@ -30,10 +30,10 @@
 
     <script>
         function convert(){
-        const cmVal = Number(document.getElementById("input").value)
-        const inchVal = cmVal/2.54
+        const ceVal = Number(document.getElementById("input").value)
+        const FahrenVal = ceVal*(9/5)+32
         const result = document.getElementById("result")
-        result.innerHTML = inchVal.toFixed(2) + " inches"
+        result.innerHTML = FahrenVal + " Degree Fahrenheit"
         }
 
     </script>

@@ -8,10 +8,10 @@
 </head>
 <body>
     <div id="wrapper">
-        <h1 class="heading">CM to INCH</h1>
+        <h1 class="heading">INCH to CM</h1>
         <hr>
         <div id="inputdiv">
-            <input type="text" id="input" placeholder="Enter CM . . ."><br><br>
+            <input type="text" id="input" placeholder="Enter inches . . ."><br><br>
         </div>
         <div id="btn-div">
             <button type="submit" onclick="convert()" class="btn" >Convert to inch</button>
@@ -20,9 +20,9 @@
         <br>
         </div>
         <br><br><br><hr><br>
-         <div class="btns">
-            <a href="index.html" class="cm">Inch to CM</a>
-            <a href="inchtocm.html" class="cm">CM to Inch</a>
+        <div class="btns">
+            <a href="index.html" class="cm">CM to Inch</a>
+            <a href="inchtocm.html" class="cm">Inch to CM</a>
             <a href="temperature.html" class="cm">Celsius to Fahrenheit</a>
             <a href="temperature1.html" class="cm">Fahrenheit to Celsius</a>
         </div>
@@ -30,10 +30,10 @@
 
     <script>
         function convert(){
-        const cmVal = Number(document.getElementById("input").value)
-        const inchVal = cmVal/2.54
+        const inchVal = Number(document.getElementById("input").value)
+        const cmVal = inchVal*2.54
         const result = document.getElementById("result")
-        result.innerHTML = inchVal.toFixed(2) + " inches"
+        result.innerHTML = cmVal.toFixed(2) + " CM"
         }
 
     </script>

@@ -7,6 +7,7 @@ body{
 }
 
 #wrapper{
+    position: relative;
     background-color: hsl(180, 27%, 24%);
     max-width: 400px;
     height: 600px;
@@ -47,6 +48,7 @@ hr{
 
 .btn{
     padding: 5px 20px;
+    
     width: 250px;
     font-size: 16px;
     font-weight: 600;
@@ -78,9 +80,49 @@ hr{
     font-size: 24px;
     font-weight: 600;
     padding: 5px 40px;
-    
     background-color: transparent;
     color: rgba(93, 244, 226);
     letter-spacing: 1px;
     /* border-bottom: 2px double aqua; */
+}
+
+.btns{
+    /* margin-top: auto; */
+    /* position: fixed; */
+    /* place-items: center; */
+    /* justify-content: center; */
+    /* margin-top: 250px; */
+    align-items: ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);            
+    gap: 10px;
+    /* align-items: center; */
+    /* text-align: center; */
+    place-items: center;
+}
+
+a {
+    text-decoration: none;
+    /* place-items: center; */
+    color: aqua;
+    background-color: rgb(20, 37, 37) ;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(93, 244, 226, 1) ;
+    transition: background  0.3s;
+
+}
+
+a:hover{
+    background-color: rgba(93, 244, 226);
+    color: rgb(20, 37, 37);
+    box-shadow: 0 0 5px rgba(20, 37, 37, 1) ;
+}
+
+a:active{
+    color: aliceblue;
 }
